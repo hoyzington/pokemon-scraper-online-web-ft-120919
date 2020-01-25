@@ -16,9 +16,8 @@ class Pokemon
     @id = db.execute("SELECT last_insert_rowid() FROM pokemon")[0][0]
   end
   
-  def update
-    sql = "UPDATE pokemon SET name = ?, type = ?, db = ? WHERE id = ?"
-    @db.execute(sql, self.name, self.type, self.db, self.id)
+  def self.find
+    
   end
   
 end

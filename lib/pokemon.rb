@@ -17,7 +17,7 @@ class Pokemon
   end
   
   def self.find
-    
+    poke = @db.execute("SELECT")
   end
   
 end
